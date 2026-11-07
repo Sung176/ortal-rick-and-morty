@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal Rick and Morty</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <h1 class="logo">Rick <span>and</span> Morty</h1>
+    <p class="sub">Explore o multiverso: personagens carregados em tempo real da API oficial.</p>
+  </header>
+
+  <section class="filtros">
+    <input id="busca" type="search" placeholder="Buscar personagem pelo nome...">
+    <select id="status">
+      <option value="">Todos os status</option>
+      <option value="alive">Vivo</option>
+      <option value="dead">Morto</option>
+      <option value="unknown">Desconhecido</option>
+    </select>
+  </section>
+
+  <p id="mensagem" class="mensagem"></p>
+
+  <!-- Os cards são criados dinamicamente pelo JavaScript dentro desta div -->
+  <main id="cards" class="cards"></main>
+
+  <nav class="paginacao">
+    <button id="anterior">&larr; Anterior</button>
+    <span id="pagina">1</span>
+    <button id="proxima">Próxima &rarr;</button>
+  </nav>
+
+  <footer class="rodape">Dados: <a href="https://rickandmortyapi.com/" target="_blank">rickandmortyapi.com</a></footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
